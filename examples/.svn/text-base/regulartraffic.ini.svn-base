@@ -1,0 +1,36 @@
+[General]
+number_of_users = 3980
+number_of_files = 10000
+mapping_algorithm = "random"
+time_limit = 432000
+social_graph = facebook
+
+[InterSessionTime]
+distribution = lognorm
+param1 = 2.245
+param2 = 1.133
+
+[InterActivityTime]
+distribution = lognorm
+param1 = 1.789
+param2 = 2.366
+
+[SessionLength]
+distribution = zipf
+param1 = 1.765
+param2 = 4.888
+
+[SessionsPerUser]
+distribution = zipf
+param1 = 1.792
+
+[MarkovChain]
+file = regulartraffic.gml
+
+[SelectContent]
+alpha=0.65
+
+[Mobility]
+model_name = random_waypoint
+x_size = 100
+y_size = 100

@@ -1,0 +1,45 @@
+# Network Dynamics of Mobile Social Networks - ICC 2014
+
+[General]
+number_of_users = 3980
+number_of_files = 10000
+mapping_algorithm = "random"
+time_limit = 432000
+social_graph = facebook
+communities_enabled = true
+number_of_communities = 5
+
+[InterSessionTime]
+# FROM THE PAPER
+distribution = lognorm
+param1 = 3.61
+param2 = 0.75
+
+[InterActivityTime]
+# EXTRACTED FROM THE PAPER
+distribution = lognorm
+param1 = 1.98
+param2 = 1.06
+
+[SessionLength]
+# EXTRACTED FROM THE PAPER
+distribution = zipf
+param1 = 1.280
+param2 = 3.160
+
+[SessionsPerUser]
+# FROM THE PAPER
+distribution = zipf
+param1 = 0.94
+param2 = 0.87
+
+[MarkovChain]
+file = orkut.gml
+
+[SelectContent]
+alpha=0.65
+
+[Mobility]
+model_name = random_waypoint
+x_size = 100
+y_size = 100
