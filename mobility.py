@@ -63,7 +63,7 @@ class MobilityModel(object):
             return self.pos
         else:
             res = self.model.next()
-            self.pos = res[0][0], res[0][1]
+            self.pos = round(res[0][0], 1), round(res[0][1], 1)
             return self.pos
     
     def current(self):

@@ -30,8 +30,7 @@ Without virtualenv:
 > cd ..
 > git clone https://github.com/mesarpe/sonetor
 > cd sonetor
-> chmod +x build_regulartraffic.sh
-> chmod +x build_socialtraffic.sh
+> chmod +x sonetor.sh
 ```
 
 
@@ -50,14 +49,13 @@ With virtualenv:
 > cd ..
 > git clone https://github.com/mesarpe/sonetor
 > cd sonetor
-> chmod +x build_regulartraffic.sh
-> chmod +x build_socialtraffic.sh
+> chmod +x sonetor.sh
 ```
 
 Creating the first trace file:
 
 ```bash
-> build_regulartraffic.sh examples/example.ini /tmp/trace123
+> ./sonetor examples/example.ini /tmp/trace123
 ```
 
 NOTE: if you still have problems, just let me know.
