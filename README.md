@@ -1,6 +1,15 @@
 Description
 -----------
+SONETOR is a set of utilities that generates synthetic social network traces.
+This social network traces represent interaction of users in a social network fashion or in a regular client-server fashion.
 
+We invite interested readers to [1] for further information.
+
+Features
+--------
+ * Synthetic trace generator
+ * Represents social network or client-server traffic
+ * Create traces with mobility patterns
 
 Installation
 ------------
@@ -21,6 +30,8 @@ Without virtualenv:
 > cd ..
 > git clone https://github.com/mesarpe/sonetor
 > cd sonetor
+> chmod +x build_regulartraffic.sh
+> chmod +x build_socialtraffic.sh
 ```
 
 
@@ -39,6 +50,8 @@ With virtualenv:
 > cd ..
 > git clone https://github.com/mesarpe/sonetor
 > cd sonetor
+> chmod +x build_regulartraffic.sh
+> chmod +x build_socialtraffic.sh
 ```
 
 Creating the first trace file:
