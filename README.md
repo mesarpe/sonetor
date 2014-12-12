@@ -5,18 +5,49 @@ Description
 Installation
 ------------
 
+In order to install SONETOR, you have two options.
+Either to install it using virtualenv, either without it.
+
 setuptools - from Git repository
 
+Without virtualenv:
 ```bash
-> apt-get install python-networkx python-scipy python-numpy
-> git clone git://github.com/panisson/pymobility.git
+> apt-get install git
+> apt-get install python-dev
+> apt-get install python-networkx python-scipy python-numpy python-pyparsing
+> git clone https://github.com/panisson/pymobility.git
 > cd pymobility
-> python setup.py install (run as admin/root)
+> python setup.py install
 > cd ..
-> wget http://webloria.loria.fr/~bernardc/sonetor/src.tar.gz
-> tar -xvzf
+> git clone https://github.com/mesarpe/sonetor
 > cd sonetor
 ```
+
+
+With virtualenv:
+```bash
+> apt-get install git
+> apt-get install python-dev
+> apt-get install python-virtualenv
+> apt-get install python-networkx python-scipy python-numpy
+> virtualenv .
+> source bin/activate
+> easy_install numpy scipy pyparsing networkx
+> git clone https://github.com/panisson/pymobility.git
+> cd pymobility
+> python setup.py install
+> cd ..
+> git clone https://github.com/mesarpe/sonetor
+> cd sonetor
+```
+
+Creating the first trace file:
+
+```bash
+> build_regulartraffic.sh examples/example.ini /tmp/trace123
+```
+
+NOTE: if you still have problems, just let me know.
 
 Dependencies
 ------------
