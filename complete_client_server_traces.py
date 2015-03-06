@@ -40,17 +40,22 @@ if __name__ == '__main__':
 
     traces = Trace()
 
+    content_set = set()
+
     for d in range(len(datafile)-1):
         try:
             timestamp, action, _from, content, filesize, mobility = traces.import_retrievecontent(datafile[d])
+            content_set.add(content)
             
-            print Trace.export_publish(
-                0.0,
-                "Publish",
-                random.randint(0, int(users)),
-                content,
-                0
-            )
         except:
             pass
 
+
+    for content in content_set
+        print Trace.export_publish(
+            0.0,
+            "Publish",
+            random.randint(0, int(users)),
+            content,
+            0
+        )
