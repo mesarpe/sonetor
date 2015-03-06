@@ -51,7 +51,7 @@ if __name__ == '__main__':
             pass
 
 
-    for content in content_set
+    for content in content_set:
         print Trace.export_publish(
             0.0,
             "Publish",
