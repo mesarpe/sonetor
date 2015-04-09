@@ -55,7 +55,7 @@ With virtualenv:
 Creating the first trace file:
 
 ```bash
-> ./sonetor examples/example.ini /tmp/trace123
+> ./sonetor.sh examples/example.ini /tmp/trace123
 ```
 
 NOTE: if you still have problems, just let me know.
